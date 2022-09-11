@@ -11,8 +11,8 @@ Main Test
 
    Maximize Browser Window
    Click Element                   xpath://span[@class='d-none d-md-block'][contains(.,'ENTRAR')]
-   Input Text                      css:input[type=email]           *email*
-   Input Text                      css:input[type=password]        *senha*
+   Input Text                      css:input[type=email]           * email *
+   Input Text                      css:input[type=password]        * senha *
    Click Element                   xpath://*[@id="btn-login"]
    Wait Until Element is Visible   xpath://span[@class='fw-100'][contains(.,'Olá,')]
    Capture Page Screenshot
