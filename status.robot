@@ -7,12 +7,12 @@ Test Teardown       Encerra Sessão
  
 
 *** Test Cases ***
-Login/Logout Test
+Main Test
 
    Maximize Browser Window
    Click Element                   xpath://span[@class='d-none d-md-block'][contains(.,'ENTRAR')]
-   Input Text                      css:input[type=email]           skyrius2@outlook.com
-   Input Text                      css:input[type=password]        Lumia1320
+   Input Text                      css:input[type=email]           *email*
+   Input Text                      css:input[type=password]        *senha*
    Click Element                   xpath://*[@id="btn-login"]
    Wait Until Element is Visible   xpath://span[@class='fw-100'][contains(.,'Olá,')]
    Capture Page Screenshot
@@ -32,7 +32,6 @@ Login/Logout Test
    Input Text                      xpath://input[contains(@placeholder,'ex. ABCD11, Título xpto')]      TAESA
    Wait Until Element Is Visible   xpath://div[@class='tt-suggestion tt-selectable'][contains(.,'TAEE3 - TAESA')]
    CLick Element                   xpath://div[@class='tt-suggestion tt-selectable'][contains(.,'TAEE3 - TAESA')]
-   Sleep                           1s
    Input Text                      xpath://input[contains(@name,'ReferenceDate')]         09/09/2022
    Input Text                      xpath://input[contains(@name,'Quantity')]              10
    Input Text                      xpath://input[contains(@name,'UnitValue')]             12,58
